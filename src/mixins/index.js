@@ -11,6 +11,10 @@ export const utils = {
         getToken() {
             let token = localStorage.getItem(this.tokenStorageKey)
             return token ? token : 0
+        },
+        async saveToken(token) {
+            // console.log()
+            await localStorage.setItem(this.tokenStorageKey, token)
         }
     }
 }
