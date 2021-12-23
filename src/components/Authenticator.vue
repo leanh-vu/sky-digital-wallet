@@ -11,8 +11,7 @@ export default {
   name: 'Authenticator',
   data: () => ({
     home: 'Home',
-    login: 'Login',
-    send: 'Send'
+    login: 'Login'
   }),
   watch: {
     $route(route) {
